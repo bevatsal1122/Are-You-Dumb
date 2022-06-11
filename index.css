@@ -33,6 +33,10 @@ body {
 #reload {
     display: none;
 }
+#code {
+    user-select:text;
+    cursor: default;
+}
 #last {
     position: absolute;
     display: block;
