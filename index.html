@@ -28,7 +28,6 @@
     </div>
 
     <script>
-
             // Its working so don't dare to change it :)
 
             $('#no').on('mouseover', function() {
@@ -40,7 +39,6 @@
                 var y = parseInt(rectify(Math.random()) * window.innerHeight); // Initial Movement Y
                 if (x > 1100) { x = 1100 } // Prevents Overflow X
                 if (y > 550) { y = 550 } // Prevents Overflow Y
-                
                 if (x-a <= 150) // Takes Care of Proper Shifting X
                 {
                     if (x <= 800) { x+=250 } // Increase Shifting X Greater than Button Width
@@ -55,8 +53,8 @@
                 b = y; // Assinging Current Shiting Y for Future Iteration  
                 // Moving Button  
                 $(this).css({
-                    'left': x + "px",
-                    'top': y + "px"
+                    'left': x + "px", // Shifting Button X
+                    'top': y + "px" // Shifting Button Y
                 });
             })
 
@@ -70,7 +68,6 @@
             reload = () => {
                 window.location.reload();
             }
-
         </script>
 </body>
 </html>
