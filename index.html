@@ -33,7 +33,12 @@
     <script>
 
             // Its working so don't dare to change it :)
-
+            document.onkeydown = function (t) {
+                if(t.which == 9){
+                    return false;
+                }
+            }
+        
             $('#no').on('mouseover', function() {
                 // Last Margin Values for X : a
                 // Last Margin Values for Y : b
