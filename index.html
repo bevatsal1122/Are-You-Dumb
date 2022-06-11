@@ -48,12 +48,12 @@
                 var y = parseInt(rectify(Math.random()) * window.innerHeight); // Initial Movement Y
                 if (x > 1030) { x = 1030 } // Prevents Overflow X
                 if (y > 550) { y = 550 } // Prevents Overflow Y
-                if (x-a <= 180) // Takes Care of Proper Shifting X
+                if (x-a <= 190) // Takes Care of Proper Shifting X
                 {
-                    if (x <= 760) { x+=230 } // Increase Shifting X Greater than Button Width
-                    else { x-=230 } // Decrease Shifting X Greater than Button Width
+                    if (x <= 760) { x+=250 } // Increase Shifting X Greater than Button Width
+                    else { x-=250 } // Decrease Shifting X Greater than Button Width
                 }
-                if (y-b <= 80) // Takes Care of Proper Shifting Y
+                if (y-b <= 90) // Takes Care of Proper Shifting Y
                 {
                     if (y<=400) { y+=140 } // Insrease Shifting Y Greater than Button Height
                     else { y-=140 } // Decrease Shifting Greater Y than Button Height
