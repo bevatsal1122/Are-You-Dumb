@@ -33,8 +33,10 @@
     <script>
 
             // Its working so don't dare to change it :)
+            // Disabling Tab Key (Keyboard)
             document.onkeydown = function (t) {
-                if(t.which == 9){
+                if (t.which == 9) //t.which = 9 for Tab Key, t.which=65 for a/A Key
+                {
                     return false;
                 }
             }
@@ -56,7 +58,7 @@
                 if (y-b <= 90) // Takes Care of Proper Shifting Y
                 {
                     if (y<=400) { y+=140 } // Insrease Shifting Y Greater than Button Height
-                    else { y-=140 } // Decrease Shifting Greater Y than Button Height
+                    else { y-=140 } // Decrease Shifting Y Greater than Button Height
                 }
                 a = x; // Assinging Current Shiting X for Future Iteration
                 b = y; // Assinging Current Shiting Y for Future Iteration  
