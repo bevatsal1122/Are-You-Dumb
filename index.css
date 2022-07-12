@@ -34,7 +34,7 @@ body {
     display: none;
 }
 #code {
-    user-select:text;
+    user-select: text;
     cursor: default;
 }
 #last {
